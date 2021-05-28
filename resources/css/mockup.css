@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+
+.mockup {
+  --mockup-bg: #171c27;
+  --mockup-fos: 6vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--mockup-bg);
+  color: white;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  z-index: 10100;
+}
+
+.mockup img {
+  position: relative;
+  width: 25vw;
+  z-index: 1000;
+}
+
+.h-words {
+  position: relative;
+  font-size: calc(var(--mockup-fos) * 1.7);
+  height: 15vh;
+  font-weight: 700;
+  width: 100vw;
+  text-align: center;
+}
+
+.h-words span {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+  text-align: center;
+  background: var(--mockup-bg);
+}
+
+.mockup .main-name {
+  font-size: var(--mockup-fos);
+  position: relative;
+  margin-top: 75px;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+.mockup .main-name .red {
+  color: red;
+  font-size: 1.3em;
+}
+
+.mockup .seen {
+  overflow: hidden;
+  letter-spacing: calc(var(--mockup-fos) * -1);
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mockup .hidden {
+  display: inline-block;
+  letter-spacing: calc(var(--mockup-fos) * -1);
+  overflow: hidden;
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mockup .loader-container {
+  position: relative;
+  max-width: 100%;
+  width: 400px;
+  height: 30px;
+  box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.2), 3px 3px 7px black;
+  z-index: 100;
+  border-radius: 50px;
+}
+
+.mockup .loader-container .loader {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background: #fff;
+  height: 10px;
+  width: 0;
+  border-radius: 100px;
+}
